@@ -5,12 +5,12 @@ def get_data(filename):
 
 # Count the number of times the depth increases
 def count_increments(depths):
-    return sum((1 if b > a else 0) for a, b in zip(depths[:-1], depths[1:]))
+    return sum((1 if b > a else 0) for a, b in zip(depths, depths[1:]))
 
 
 # Calculate the 3-member sliding window list
 def sliding_window(depths):
-    return [sum([a, b, c]) for a, b, c in zip(depths[:-1], depths[1:], depths[2:])]
+    return [sum([a, b, c]) for a, b, c in zip(depths, depths[1:], depths[2:])]
 
 
 def main():
