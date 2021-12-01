@@ -16,10 +16,9 @@ My Solutions are in Python.
 | Day                                       | Name        | Stars |
 | ----------------------------------------- | ----------- | ------ |
 | [01](https://adventofcode.com/2021/day/1) | Sonar Sweep | ⭐⭐   |
-
-
-| [02](https://adventofcode.com/2021/day/2) |     | ⭐⭐ |
 <!--
+| [02](https://adventofcode.com/2021/day/2) |     | ⭐⭐ |
+
 | [03](https://adventofcode.com/2021/day/3)  |             | ⭐⭐                                        |
 | [04](https://adventofcode.com/2021/day/4)  |             | ⭐⭐                                        |
 | [05](https://adventofcode.com/2021/day/5)  |             | ⭐⭐                                        |
@@ -44,9 +43,3 @@ My Solutions are in Python.
 | [24](https://adventofcode.com/2021/day/24) |             | ⭐⭐                                        |
 | [25](https://adventofcode.com/2021/day/25) |             | ⭐⭐                                        | -->
 
-## Linting
-
-```sh
-gofmt -s -w . && git ls-files | grep .go | xargs golint
-black . && isort . && flake8
-```
