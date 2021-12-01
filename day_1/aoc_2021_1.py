@@ -1,4 +1,3 @@
-
 # Return input data as list of integers
 def get_data(filename):
     return [int(a) for a in open(filename).readlines()]
