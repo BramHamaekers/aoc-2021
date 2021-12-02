@@ -1,7 +1,7 @@
-# Return input data as list of integers
 import math
 
 
+# Return input data as list of integers
 def get_data(filename):
     return [str(a) for a in open(filename).read().splitlines()]
 

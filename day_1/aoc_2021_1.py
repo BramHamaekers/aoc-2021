@@ -20,11 +20,8 @@ def main():
 
     # Day 1.1
     solution_1 = count_increments(data)
-
     # Day 1.2
-    sw = sliding_window(data)
-    solution_2 = count_increments(sw)
-
+    solution_2 = count_increments(sliding_window(data))
     # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
