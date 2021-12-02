@@ -10,6 +10,11 @@
 
 My Solutions are in Python.
 
+## KULeuven
+A list repositories with solutions, made by [KULeuven students](https://github.com/informatica-kul/aoc-2021).
+
+
+
 
 ## Overview
 
