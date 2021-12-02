@@ -17,8 +17,8 @@ def get_position(commands):
     return hor, depth
 
 
-# Return the position and aim of the submarine given a list of commands
-def get_pos_and_aim(commands):
+# Return the position of the submarine given a list of commands (with aim)
+def get_position_2(commands):
     hor, depth, aim = 0, 0, 0
     for command in commands:
         match command.split():
@@ -36,7 +36,7 @@ def main():
     # Day 1.1
     solution_1 = math.prod(get_position(data))
     # Day 1.2
-    solution_2 = math.prod(get_pos_and_aim(data))
+    solution_2 = math.prod(get_position_2(data))
     # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
