@@ -23,12 +23,9 @@ def get_gamma(data):
     return list_to_bin(gamma)  # convert list to binary number
 
 
-# Inverts gamma binary string
+# Inverts gamma binary string -> Reverse bits: 1 - 0 = 1 / 1 - 1 = 1
 def epsilon_from_gamma(gamma):
-    epsilon = gamma.replace('1', '2')   # replace "1" with "2"
-    epsilon = epsilon.replace('0', '1')   # replace "0" with "1"
-    epsilon = epsilon.replace('2', '0')   # replace "2" with "0"
-    return epsilon
+    return ''.join([str(1 - int(bit)) for bit in gamma])
 
 
 # Calculate the power consumption given a list of numpy arrays
@@ -49,7 +46,7 @@ def delete_column(matrix, i, bit):
 
 
 # Get o2 generator rating or co2 scrubber rating from list of numpy arrays
-def life_support_metric(data, o2):
+def life_support_metric(data, o2=True):
     if o2: a, b = 1, 0
     else: a, b = 0, 1
     matrix = np.column_stack(data)  # create rows of first bits
@@ -65,8 +62,8 @@ def life_support_metric(data, o2):
 
 # Calculate the life support rating given a list of numpy arrays
 def life_support(data):
-    o2 = life_support_metric(data, True)
-    co2 = life_support_metric(data, False)
+    o2 = life_support_metric(data, o2=True)
+    co2 = life_support_metric(data, o2=False)
     return int(o2, 2) * int(co2, 2)
 
 
