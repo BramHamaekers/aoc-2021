@@ -48,27 +48,16 @@ def delete_column(matrix, i, bit):
     return matrix
 
 
-# Get o2 generator rating from list of numpy arrays
-def o2_rating(data):
+# Get o2 generator rating or co2 scrubber rating from list of numpy arrays
+def life_support_metric(data, o2):
+    if o2: a, b = 1, 0
+    else: a, b = 0, 1
     matrix = np.column_stack(data)  # create rows of first bits
     m, n = matrix.shape
     for i in range(m):
         nz = np.count_nonzero(matrix[i])
-        if nz >= n / 2: matrix = delete_column(matrix, i, 1)
-        else: matrix = delete_column(matrix, i, 0)
-        _, n = matrix.shape
-        if n == 1: break
-    return list_to_bin(np.transpose(matrix).flatten())
-
-
-# Get co2 scrubber rating from list of numpy arrays
-def co2_rating(data):
-    matrix = np.column_stack(data)  # create rows of first bits
-    m, n = matrix.shape
-    for i in range(m):
-        nz = np.count_nonzero(matrix[i])
-        if nz >= n / 2: matrix = delete_column(matrix, i, 0)
-        else: matrix = delete_column(matrix, i, 1)
+        if nz >= n / 2: matrix = delete_column(matrix, i, a)
+        else: matrix = delete_column(matrix, i, b)
         _, n = matrix.shape
         if n == 1: break
     return list_to_bin(np.transpose(matrix).flatten())
@@ -76,8 +65,8 @@ def co2_rating(data):
 
 # Calculate the life support rating given a list of numpy arrays
 def life_support(data):
-    o2 = o2_rating(data)
-    co2 = co2_rating(data)
+    o2 = life_support_metric(data, True)
+    co2 = life_support_metric(data, False)
     return int(o2, 2) * int(co2, 2)
 
 
