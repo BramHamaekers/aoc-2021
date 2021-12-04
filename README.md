@@ -23,8 +23,8 @@ A list repositories with solutions, made by [KULeuven students](https://github.c
 | [01](https://adventofcode.com/2021/day/1) | Sonar Sweep | ⭐⭐    |
 | [02](https://adventofcode.com/2021/day/2) | Dive!       | ⭐⭐    |
 | [03](https://adventofcode.com/2021/day/3)  | Binary Diagnostic | ⭐⭐                                        |
+| [04](https://adventofcode.com/2021/day/4)  |  Giant Squid           | ⭐⭐                                        |
 <!--
-| [04](https://adventofcode.com/2021/day/4)  |             | ⭐⭐                                        |
 | [05](https://adventofcode.com/2021/day/5)  |             | ⭐⭐                                        |
 | [06](https://adventofcode.com/2021/day/6)  |             | ⭐⭐                                        |
 | [07](https://adventofcode.com/2021/day/7)  |             | ⭐⭐                                        |
