@@ -56,9 +56,9 @@ def add_diag_up_line(sparse, x1, y1, x2, y2):
 def count_line_overlaps(data, diag=False):
     sparse = Sparse()
     for line in data:
-        [a, _, b] = line.split()
-        x1, y1 = int(a.split(',')[0]), int(a.split(',')[1])
-        x2, y2 = int(b.split(',')[0]), int(b.split(',')[1])
+        [a, b] = line.split(' -> ')
+        x1, y1 = int(a[0]), int(a[2])
+        x2, y2 = int(b[0]), int(b[2])
         if x1 == x2: add_hor_line(sparse, x1, y1, y2)
         if y1 == y2: add_vert_line(sparse, x1, x2, y1)
         if diag and x1 - y1 == x2 - y2: add_diag_down_line(sparse, x1, y1, x2, y2)
@@ -69,7 +69,7 @@ def count_line_overlaps(data, diag=False):
 
 def main():
     # Get input data
-    filename = 'input.txt'
+    filename = 'test.txt'
     data = get_data(filename)
 
     # Day 1.1
