@@ -69,7 +69,7 @@ def count_line_overlaps(data, diag=False):
 
 def main():
     # Get input data
-    filename = 'test.txt'
+    filename = 'input.txt'
     data = get_data(filename)
 
     # Day 1.1
