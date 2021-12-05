@@ -19,3 +19,7 @@ be preferable.
 ## Day 4:
 Made use of Pandas DataFrames (as suggested in [Day 3](#day-3)). Although not a very efficient solution. I learned quite a lot
 about Pandas during the process of figuring out a solution with it.
+
+## Day 5:
+Made use of own sparse matrix class to solve the puzzle. Probably going to try using my own datastructures
+more in future puzzles.
