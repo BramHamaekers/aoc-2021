@@ -23,3 +23,7 @@ about Pandas during the process of figuring out a solution with it.
 ## Day 5:
 Made use of own sparse matrix class to solve the puzzle. Probably going to try using my own datastructures
 more in future puzzles.
+
+## Day 6:
+Once again made use of my own class. Very happy with the result as the solution is instant and today
+was an optimisation problem.
