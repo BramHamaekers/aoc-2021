@@ -27,15 +27,11 @@ def count_fish(data, days):
 
 
 def main():
-    # Get input data
     filename = 'input.txt'
     data = get_data(filename)
 
-    # Day 1.1
     solution_1 = count_fish(data, 80)
-    # Day 1.2
     solution_2 = count_fish(data, 256)
-    # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
 

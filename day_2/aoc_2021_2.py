@@ -29,15 +29,11 @@ def get_position_2(commands):
 
 
 def main():
-    # Get input data
     filename = 'input.txt'
     data = get_data(filename)
 
-    # Day 1.1
     solution_1 = math.prod(get_position(data))
-    # Day 1.2
     solution_2 = math.prod(get_position_2(data))
-    # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
 

@@ -40,15 +40,11 @@ def lose_bingo(numbers, boards):
 
 
 def main():
-    # Get input data
     filename = 'input.txt'
     numbers, boards = get_data(filename)
 
-    # Day 1.1
     solution_1 = win_bingo(numbers, boards)
-    # Day 1.2
     solution_2 = lose_bingo(numbers, boards)
-    # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
 

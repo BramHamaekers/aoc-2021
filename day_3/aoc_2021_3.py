@@ -61,16 +61,12 @@ def life_support(matrix):
 
 
 def main():
-    # Get input data
     filename = 'input.txt'
     data = get_data(filename)
     matrix = np.column_stack(data)  # create rows of first bits
 
-    # Day 1.1
     solution_1 = power_consumption(matrix)
-    # Day 1.2
     solution_2 = life_support(matrix)
-    # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
 

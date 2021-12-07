@@ -68,15 +68,11 @@ def count_line_overlaps(data, diag=False):
 
 
 def main():
-    # Get input data
     filename = 'input.txt'
     data = get_data(filename)
 
-    # Day 1.1
     solution_1 = count_line_overlaps(data)
-    # Day 1.2
     solution_2 = count_line_overlaps(data, diag=True)
-    # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
 

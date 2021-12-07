@@ -14,15 +14,11 @@ def sliding_window(depths):
 
 
 def main():
-    # Get input data
     filename = 'input.txt'
     data = get_data(filename)
 
-    # Day 1.1
     solution_1 = count_increments(data)
-    # Day 1.2
     solution_2 = count_increments(sliding_window(data))
-    # Report solution
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
 
