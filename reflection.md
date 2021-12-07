@@ -27,3 +27,7 @@ more in future puzzles.
 ## Day 6:
 Once again made use of my own class. Very happy with the result as the solution is instant and today
 was an optimisation problem. Testing -> can do 100000 days almost instantly
+
+## Day 7:
+Very short and easy solution. I had a bit of a problem with rounding errors. But overall found solution to
+both problems quickly.
