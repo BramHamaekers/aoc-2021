@@ -26,4 +26,4 @@ more in future puzzles.
 
 ## Day 6:
 Once again made use of my own class. Very happy with the result as the solution is instant and today
-was an optimisation problem.
+was an optimisation problem. Testing -> can do 100000 days almost instantly

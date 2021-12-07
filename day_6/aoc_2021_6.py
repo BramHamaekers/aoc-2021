@@ -21,7 +21,7 @@ def get_data(filename):
 # return the amount of fish after a certain amount of days
 def count_fish(data, days):
     school = School(data)
-    for i in range(days):
+    for _ in range(days):
         school.update()
     return sum(school.fish.values())
 
