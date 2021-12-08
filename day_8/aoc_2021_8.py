@@ -24,14 +24,19 @@ def count_unique_output(data):
     return count[2] + count[4] + count[3] + count[7]
 
 
-# Convert string output to a number
-def calculate_output(input, output):
+def one_four_six(input):
     for elem in input:
         match len(elem):
             case 2: one = tuple(elem)
             case 4: four = tuple(elem)
             case 6:
                 if not all(s in elem for s in one): six = tuple(elem)
+    return one, four, six
+
+
+# Convert string output to a number
+def calculate_output(input, output):
+    one, four, six = one_four_six(input)
     for i, elem in enumerate(output):
         match len(elem):
             case 2: output[i] = 1
