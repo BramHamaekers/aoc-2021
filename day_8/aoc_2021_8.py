@@ -15,7 +15,7 @@ def get_output(data):
 
 # Return amount of output equal to 1,4,7 or 8
 # given that len(1) -> 2, len(4) -> 4, len(7) -> 3, len(8) -> 7
-def count_unique_output(data):
+def count_one_four_seven_eight(data):
     output = get_output(data)
     flat_output = [item for sublist in output for item in sublist]
     numbers = [len(x) for x in flat_output]
@@ -64,7 +64,7 @@ def main():
     filename = 'input.txt'
     data = get_data(filename)
 
-    solution_1 = count_unique_output(data)
+    solution_1 = count_one_four_seven_eight(data)
     solution_2 = count_all_output(data)
     print(f'solution 1: {solution_1}\nsolution 2: {solution_2}')
 
