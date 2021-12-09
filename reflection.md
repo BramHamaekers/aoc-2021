@@ -34,3 +34,6 @@ both problems quickly.
 
 ### Day 8: 
 Not a clean looking or very efficient solution today. But it works. :)
+
+### Day 9:
+Part 2 took me longer than it should to find.
