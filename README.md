@@ -46,4 +46,4 @@ A list repositories with solutions, made by [KULeuven students](https://github.c
 | [25](https://adventofcode.com/2021/day/25) |                      | ⭐⭐    | -->
 
 ## Advent of Code 2022
-c++ solutions: https://github.com/BramHamaekers/aoc-2022
+C++ solutions: https://github.com/BramHamaekers/aoc-2022
