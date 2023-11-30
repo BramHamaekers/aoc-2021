@@ -9,7 +9,7 @@
 My Solutions are in Python.
 
 ## KULeuven
-A list repositories with solutions, made by [KULeuven students](https://github.com/informatica-kul/aoc-2021).
+A list of repositories with solutions, made by [KULeuven students](https://github.com/informatica-kul/aoc-2021).
 
 
 
@@ -45,5 +45,5 @@ A list repositories with solutions, made by [KULeuven students](https://github.c
 | [24](https://adventofcode.com/2021/day/24) |                      | ⭐⭐    |
 | [25](https://adventofcode.com/2021/day/25) |                      | ⭐⭐    | -->
 
-## Advent of Code 2022
+### Advent of Code 2022
 C++ solutions: https://github.com/BramHamaekers/aoc-2022
